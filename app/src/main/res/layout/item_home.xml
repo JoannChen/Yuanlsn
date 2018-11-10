@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px486"
+    android:layout_height="@dimen/px360"
+    android:layout_marginBottom="@dimen/px40"
+    android:background="@drawable/shape_bg_home_item">
+
+    <!--首页字条目-->
+
+    <LinearLayout
+        android:id="@+id/ll_class_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px140"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_bg_home_item_orange"
+        android:orientation="vertical">
+
+        <!--标题-->
+
+        <TextView
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/px20"
+            android:layout_marginStart="@dimen/px20"
+            android:layout_marginTop="@dimen/px20"
+            android:maxLines="1"
+            android:text="@string/app_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px36" />
+
+        <!--多少人学习-->
+
+        <TextView
+            android:id="@id/tv_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px20"
+            android:layout_marginTop="@dimen/px20"
+            android:text="@string/app_text"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/px28" />
+
+    </LinearLayout>
+
+
+    <!--多少课时-->
+
+    <TextView
+        android:id="@id/tv_time"
+        android:layout_width="@dimen/px140"
+        android:layout_height="@dimen/px56"
+        android:layout_above="@id/ll_class_title"
+        android:background="@color/bg_home_item_class"
+        android:gravity="center"
+        android:text="@string/class_time"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px30" />
+
+</RelativeLayout>

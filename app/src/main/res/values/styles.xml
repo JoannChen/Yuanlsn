@@ -1,0 +1,108 @@
+<resources>
+
+    <!--首页分类列表（知识点推荐／项目推荐／头条推荐）字体样式-->
+    <style name="GridView_Home_Sorts_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingEnd">@dimen/px50</item>
+        <item name="android:paddingStart">@dimen/px50</item>
+        <item name="android:numColumns">2</item>
+    </style>
+
+    <!--首页分类列表（知识点推荐／项目推荐／头条推荐）字体样式-->
+    <style name="TextView_Home_Sorts_Font">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/px50</item>
+        <item name="android:layout_marginBottom">@dimen/px22</item>
+        <item name="android:textSize">@dimen/px40</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--首页分类列表换一换字体样式-->
+    <style name="TextView_Home_Change_Font">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/px50</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:gravity">end</item>
+        <item name="android:text">@string/change_for</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--首页功能区（知识点／项目／头条）字体样式-->
+    <style name="TextView_Home_Function_Font">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/px10</item>
+        <item name="android:textSize">@dimen/px40</item>
+        <item name="android:textColor">@color/font_yellow_home</item>
+    </style>
+
+
+    <!--底部选项卡样式-->
+    <style name="TabStateLayout_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <!--【布局】全屏垂直灰色 -->
+    <style name="Layout_Match_Vertical_Style">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@mipmap/bg_home</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!--加载框样式-->
+    <style name="Loading_Dialog_Style" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!--主题样式-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="android:textAllCaps">false</item>-->
+    <!--<item name="android:windowActionBar">false</item>-->
+    <!--<item name="android:windowIsTranslucent">true</item>-->
+    <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    <!--</style>-->
+
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--首页列表字条目背景的样式-->
+
+    <!-- 圆角 -->
+    <corners
+        android:bottomLeftRadius="@dimen/round_size"
+        android:bottomRightRadius="@dimen/round_size"/>
+
+    <!--填充-->
+    <solid android:color="@color/bg_home_item_orange" />
+
+</shape>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <LinearLayout style="@style/Layout_Match_Vertical_Style">
+
+        <!--首页-->
+
+        <RelativeLayout
+            android:layout_width="@dimen/device_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20">
+
+            <!--搜索框-->
+
+            <com.zuoyu.yuanlsn.widget.ClearEditText
+                android:id="@+id/et_search"
+                android:layout_width="@dimen/px840"
+                android:layout_height="@dimen/px92"
+                android:layout_marginEnd="@dimen/px50"
+                android:layout_marginStart="@dimen/px50"
+                android:background="@mipmap/bg_search"
+                android:textCursorDrawable="@drawable/shape_cursor"
+                android:textSize="@dimen/px42" />
+
+            <!--搜索按钮-->
+
+            <ImageView
+                android:id="@id/icon_1"
+                android:layout_width="@dimen/px42"
+                android:layout_height="@dimen/px42"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/px80"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/icon_search" />
+
+            <!--发送信息-->
+
+            <ImageView
+                android:id="@+id/iv_message"
+                android:layout_width="@dimen/px94"
+                android:layout_height="@dimen/px78"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/px50"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/icon_message" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px44">
+
+            <!--知识点-->
+
+            <TextView
+                android:id="@+id/tv_knowledge"
+                style="@style/TextView_Home_Function_Font"
+                android:drawableTop="@mipmap/icon_h_knowledge"
+                android:text="@string/knowledge" />
+
+            <!--项目-->
+
+            <TextView
+                android:id="@+id/tv_project"
+                style="@style/TextView_Home_Function_Font"
+                android:drawableTop="@mipmap/icon_h_project"
+                android:text="@string/project" />
+
+            <!--头条-->
+
+            <TextView
+                android:id="@+id/tv_headline"
+                style="@style/TextView_Home_Function_Font"
+                android:drawableTop="@mipmap/icon_h_headline"
+                android:text="@string/headline" />
+
+        </LinearLayout>
+
+        <!--项目推荐-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/text_1"
+                style="@style/TextView_Home_Sorts_Font"
+                android:layout_marginTop="@dimen/px60"
+                android:text="@string/project_recommend" />
+
+            <TextView
+                style="@style/TextView_Home_Change_Font"
+                android:layout_alignBaseline="@id/text_1"
+                android:layout_toEndOf="@id/text_1" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/ll_project_container"
+            android:horizontalSpacing="@dimen/px30"
+            style="@style/GridView_Home_Sorts_Style" />
+
+        <!--头条推荐-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/text_2"
+                style="@style/TextView_Home_Sorts_Font"
+                android:text="@string/headline_recommend" />
+
+            <TextView
+                style="@style/TextView_Home_Change_Font"
+                android:layout_alignBaseline="@id/text_2"
+                android:layout_toEndOf="@id/text_2" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/ll_headline_container"
+            style="@style/GridView_Home_Sorts_Style" />
+
+    </LinearLayout>
+</ScrollView>

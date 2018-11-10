@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@mipmap/bg_home">
+
+
+    <View
+        android:id="@id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px142"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bg_tab" />
+
+
+
+    <!--存放页面容器-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line_1" />
+
+
+
+    <!--底部选项卡-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.zuoyu.yuanlsn.widget.TabStateLayout
+            android:id="@+id/tab_home"
+            style="@style/TabStateLayout_Style" />
+
+        <com.zuoyu.yuanlsn.widget.TabStateLayout
+            android:id="@+id/tab_class"
+            style="@style/TabStateLayout_Style" />
+
+        <com.zuoyu.yuanlsn.widget.TabStateLayout
+            android:id="@+id/tab_download"
+            style="@style/TabStateLayout_Style" />
+
+        <com.zuoyu.yuanlsn.widget.TabStateLayout
+            android:id="@+id/tab_collection"
+            style="@style/TabStateLayout_Style" />
+
+        <com.zuoyu.yuanlsn.widget.TabStateLayout
+            android:id="@+id/tab_mine"
+            style="@style/TabStateLayout_Style" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
